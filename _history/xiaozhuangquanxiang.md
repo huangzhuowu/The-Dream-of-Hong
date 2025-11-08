@@ -1,5 +1,6 @@
 ---
 title: 假！孝庄劝降洪承畴
+author: 黄拙吾（洪清档案整理组）
 date_event: 1642-05-01
 type: primary
 verification_status: approved
