@@ -3,7 +3,7 @@ title: 假！孝庄劝降洪承畴
 date_event: 1642-05-01
 type: primary
 verification_status: approved
-tags: [清宫, 后妃, 断发, 乾隆]
+tags: [明末, 孝庄, 劝降, 皇太极, 洪承畴]
 ---
 
 
