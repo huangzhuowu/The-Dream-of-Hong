@@ -2,6 +2,20 @@
 layout: default
 title: 洪清档案
 ---
+<div class="filters" id="filters">
+  <div class="group">
+    <label>🔎 搜索</label>
+    <input id="q" type="text" placeholder="按标题关键字过滤…" />
+  </div>
+  <div class="group">
+    <label>📅 年份</label>
+    <select id="year">
+      <option value="">全部年份</option>
+      <!-- 年份选项会在脚本中自动填充 -->
+    </select>
+  </div>
+  <small>提示：三栏同时过滤，仅匹配“时间 + 标题”。</small>
+</div>
 
 <div class="triple-grid">
 
