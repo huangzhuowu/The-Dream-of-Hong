@@ -100,3 +100,20 @@ a:hover{text-decoration:underline}
 .mini-row .date{ min-width:100px; font-weight:700; }
 .mini-row a{ color:var(--ink); text-decoration:none; }
 .mini-row a:hover{ text-decoration:underline; }
+
+/* ===== 过滤工具条 ===== */
+.filters{
+  display:flex; gap:12px; align-items:center; flex-wrap:wrap;
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:var(--radius); box-shadow:var(--shadow);
+  padding:10px 12px; margin:6px 0 16px;
+}
+.filters .group{display:flex; gap:8px; align-items:center}
+.filters input[type="text"], .filters select{
+  padding:6px 10px; border:1px solid #d9d3c8; border-radius:10px; outline:none;
+}
+.filters small{color:#6b7280}
+
+.column .counter{ color:#6b7280; font-size:12px; margin:-6px 0 8px; }
+.mini-row.hidden{ display:none !important; }
+
