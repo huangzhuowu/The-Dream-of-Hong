@@ -4,28 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
-
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="stylesheet" href="/assets/css/classic.css">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/classic.css' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
     <div class="wrapper bar">
       <div class="brand"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
       <nav class="nav">
-        <a href="/pages/history">真实史料</a>
-        <a href="/pages/entertainment">娱乐信息</a>
-        <a href="/pages/metaphysics">玄学信息</a>
+        <a href="{{ '/#history' | relative_url }}">真实史料</a>
+        <a href="{{ '/#entertainment' | relative_url }}">娱乐信息</a>
+        <a href="{{ '/#metaphysics' | relative_url }}">玄学信息</a>
       </nav>
     </div>
   </header>
-
   <main>
     <div class="wrapper">
       {{ content }}
     </div>
   </main>
-
   <footer class="site-footer">
     <div class="wrapper">
       <p>© {{ site.title }} · 内容遵循 CC BY-SA 4.0，代码 MIT（除非条目另有声明）。</p>
