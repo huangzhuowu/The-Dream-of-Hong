@@ -1,15 +1,18 @@
 ---
-layout: post
+layout: metaphysics
 title: "明清民共的五行宿命"
+author: 五行气运
 categories: [玄学, 历史象数]
 tags: [五行, 明清, 民国, 中共, 气运, 易学]
-date: 2024-05-12
+date: 2025-11-09
 ---
 
 > “天地运转，五德代兴，盛衰如环，理无穷已。”
 
 历史，若以五行观之，不只是权力的传递，更是五行之气的轮回。  
 自明至今，数百年风云，不过火、水、木、金的循环而已。
+
+![五行](https://www.life-guide.com.tw/images/2013-05/teaching/title-3-img-1.jpg)
 
 ---
 
