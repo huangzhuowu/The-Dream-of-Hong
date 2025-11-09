@@ -9,8 +9,8 @@ tags: [康熙, 雍正, 乾隆, 嘉庆, 避讳, 承字, 洪清说]
 ---
 
 在清代的圣旨与诏令中，“承”字的书写方式存在一个明显的断代变化，这种变化并非书法风格差异，而更像是出于某种避讳或心理上的回避。
-![皇太极1][huangtaiji1]
-![皇太极2][huangtaiji2]
+![皇太极1](https://github.com/huangzhuowu/The-Dream-of-Hong/blob/main/images/%E8%AF%B6%EF%BC%81%E8%BF%98%E7%9C%9F%E6%98%AF_2_%E9%BB%84%E9%87%91%E8%82%AF%E5%BE%B7%E5%9F%BA%E8%80%81%E6%9D%BF_%E6%9D%A5%E8%87%AA%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%BD%91%E9%A1%B5%E7%89%88.jpg?raw=true)
+![皇太极2](https://github.com/huangzhuowu/The-Dream-of-Hong/blob/main/images/%E8%AF%B6%EF%BC%81%E8%BF%98%E7%9C%9F%E6%98%AF_3_%E9%BB%84%E9%87%91%E8%82%AF%E5%BE%B7%E5%9F%BA%E8%80%81%E6%9D%BF_%E6%9D%A5%E8%87%AA%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%BD%91%E9%A1%B5%E7%89%88.jpg?raw=true)
 
 
 图1、图2为康熙的爷爷皇太极（崇德年间）与父亲顺治年间的圣旨，可以看到“承”字写得端正规整，笔画完整无缺。
