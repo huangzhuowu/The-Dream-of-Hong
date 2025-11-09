@@ -5,7 +5,7 @@ category: entertainment
 type: commentary
 verification_status: approved
 date_event: 1636-5-14
-tags: [皇太极, 洪台吉, 满文, 名字, 清史, 洪清说, 语言政治]
+tags: [皇太极, 洪台吉, 满文, 名字, 清史, 洪清说]
 ---
 
 在清史里，有一个皇帝的名字显得格外奇怪——  
