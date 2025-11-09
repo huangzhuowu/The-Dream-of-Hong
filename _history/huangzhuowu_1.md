@@ -1,7 +1,6 @@
 ---
 layout: item
 title: "北京石景山发掘的龙袍干尸“黄拙吾”到底是谁？"
-author: 洪清档案整理组
 date_event: 2006-05-10
 category: history
 type: primary
