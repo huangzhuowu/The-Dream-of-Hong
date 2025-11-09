@@ -4,7 +4,7 @@ title: "从康雍乾避讳“承”字看洪清说合理性"
 category: history
 type: primary
 verification_status: approved
-date_event: 2025-11-09
+date_event: 1661-11-09
 tags: [康熙, 雍正, 乾隆, 嘉庆, 避讳, 承字, 洪清说]
 ---
 
