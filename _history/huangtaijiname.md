@@ -1,6 +1,6 @@
 ---
 layout: item
-title: "皇太极-一个没有真名的皇帝"
+title: "神隐·皇太极"
 author: 黄拙吾（洪清档案整理组）
 category: history
 type: commentary
