@@ -1,6 +1,6 @@
 ---
 layout: item
-title: "皇太极失去的名字"
+title: "神隐·皇太极"
 category: entertainment
 type: commentary
 verification_status: approved
