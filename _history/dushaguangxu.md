@@ -1,7 +1,7 @@
 ---
 layout: item
 title: "被辟谣的真实野史：慈禧毒杀光绪？"
-catalogy: history
+category: history
 type: academic
 verification_status: approved
 tags: [光绪, 慈禧, 清史, 辟谣, 清末悬案, 砷中毒]
