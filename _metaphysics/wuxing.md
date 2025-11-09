@@ -1,7 +1,7 @@
 ---
 layout: item
 title: "明清民共的五行宿命"
-categories: metaphysics
+category: metaphysics
 tags: [五行, 明清, 民国, 中共, 气运, 易学]
 date: 2025-11-09
 ---
