@@ -1,6 +1,6 @@
 ---
 layout: item
-title: "玄烨幼年出宫躲避天花的史实与洪清说猜想的可能性"
+title: "玄烨幼年出宫躲避天花的史实与洪清假说的可能性"
 date_event: 1654-11-01
 category: history
 type: primary
