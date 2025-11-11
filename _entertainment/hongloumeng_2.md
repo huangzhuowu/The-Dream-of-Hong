@@ -3,7 +3,7 @@ title: "红楼梦中贾府实际隐喻皇室的证据"
 category: entertainment
 type: commentary
 verification_status: approved
-date_event: 1791-02-04
+date_event: 2025-11-11
 tags: [洪清说, 红楼梦, 悼明讽清, 文学隐喻, 清史]
 ---
 
