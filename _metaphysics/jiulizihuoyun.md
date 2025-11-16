@@ -2,12 +2,12 @@
 layout: item
 title: "九离紫火运"
 author: 黄拙吾（洪清档案整理组）
-category: metaphysics
+date_event: 2024-02-04
 type: metaphysics
 verification_status: approved
-date_event: 2024-02-04
 tags: [九离运, 三元九运, 离卦, 紫火, 易学, 文化复兴, 去伪存真]
 ---
+
 
 # 九离紫火运
 
