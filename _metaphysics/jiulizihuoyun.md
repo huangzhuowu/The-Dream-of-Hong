@@ -11,7 +11,7 @@ tags: [九离运, 三元九运, 离卦, 紫火, 易学, 文化复兴, 去伪存�
 
 # 九离紫火运
 
-![jiulizihuoyun](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0309%2F4a0fc616j00sa320l000gd000cw00anm.jpg&thumbnail=660x2147483647&quality=80&type=jpg)
+![jiulizihuoyun](https://github.com/huangzhuowu/The-Dream-of-Hong/blob/main/images/%E4%B8%8B%E8%BD%BD%20(1).jpg?raw=true)
 
 “九离紫火运”是近年来在文化复兴与传统思想热潮中被重新关注的概念。它源自中国古老的“三元九运”体系，与《周易》八卦五行象征哲学相结合，被视为理解 2024—2043 年时代趋势的文化坐标。  
 然而，它并非神秘学的预言，而是一种兼具象征、历史周期与文化分析的传统方法论。
