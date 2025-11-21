@@ -27,30 +27,49 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Install Python dependencies
-        run: pip install pyyaml
-
-      - name: Install Pandoc and LaTeX (with Chinese Fonts)
+      - name: Install Dependencies
         run: |
+          pip install pyyaml
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended fonts-noto-cjk
-          # fonts-noto-cjk 是开源的 Google Noto CJK 字体，支持简体中文
 
-      - name: Generate Merged Markdown
+      - name: Run Python Script (Split Mode)
         run: python scripts/generate_pdf_source.py
 
       - name: Convert to PDF
         run: |
-          # 使用 xelatex 引擎，并指定中文字体
-          pandoc full_project.md -o HongQing_Archives.pdf \
+          # 使用分离模式：同时输入 metadata.yaml 和 content.md
+          pandoc metadata.yaml content.md -o HongQing_Archives.pdf \
             --pdf-engine=xelatex \
+            --standalone \
             -V CJKmainfont="Noto Sans CJK SC" \
-            -V geometry:margin=1in \
-            --toc \
-            --toc-depth=2
-            
-      - name: Convert to PDF
+            --verbose
+
+      - name: Commit PDF to Repo
         run: |
-          pandoc full_project.md -o HongQing_Archives.pdf \
-            --pdf-engine=xelatex \
-            -V CJKmainfont="Noto Sans CJK SC"
+          # 1. 检查 PDF 是否生成
+          if [ -f "HongQing_Archives.pdf" ]; then
+            echo "✅ PDF 成功生成"
+          else
+            echo "❌ 错误：PDF 文件未找到！"
+            exit 1
+          fi
+
+          # 2. 准备文件夹
+          mkdir -p assets/downloads
+          mv -f HongQing_Archives.pdf assets/downloads/HongQing_Archives.pdf
+          
+          # 3. 配置身份
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # 4. 提交并推送
+          git add assets/downloads/HongQing_Archives.pdf
+          
+          if git diff --staged --quiet; then
+            echo "⚠️ PDF 内容没有变化，跳过提交。"
+          else
+            git commit -m "Auto-update PDF export [skip ci]"
+            git push
+            echo "🚀 PDF 已成功推送到仓库！"
+          fi
