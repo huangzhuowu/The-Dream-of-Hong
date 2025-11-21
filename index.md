@@ -69,6 +69,36 @@ title: 洪清档案
 
 </div>
 
+<style>
+.pdf-export-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+.pdf-btn {
+    background-color: #d9534f; /* 类似红楼梦的红色 */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+.pdf-btn:hover {
+    background-color: #c9302c;
+    text-decoration: none;
+    color: white;
+}
+</style>
+
+<div class="pdf-export-wrapper">
+    <a href="{{ site.baseurl }}/assets/downloads/HongQing_Archives.pdf" class="pdf-btn">
+        <i class="fa fa-file-pdf-o"></i> 一键下载《洪清档案》全本
+    </a>
+    <p style="font-size: 0.8em; color: #666; margin-top: 5px;">
+        自动生成包含 真实史料、文学娱乐、玄学推背 所有文章
+    </p>
+</div>
+
 <script>
 (function(){
   const $ = (sel, root=document) => root.querySelector(sel);
