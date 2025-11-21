@@ -1,0 +1,65 @@
+name: Build and Publish PDF
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - '_history/**'
+      - '_entertainment/**'
+      - '_metaphysics/**'
+      - 'scripts/**'
+  workflow_dispatch: # 允许手动点击按钮触发
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 需要写权限把 PDF 推送回仓库
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Python dependencies
+        run: pip install pyyaml
+
+      - name: Install Pandoc and LaTeX (with Chinese Fonts)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended fonts-noto-cjk
+          # fonts-noto-cjk 是开源的 Google Noto CJK 字体，支持简体中文
+
+      - name: Generate Merged Markdown
+        run: python scripts/generate_pdf_source.py
+
+      - name: Convert to PDF
+        run: |
+          # 使用 xelatex 引擎，并指定中文字体
+          pandoc full_project.md -o HongQing_Archives.pdf \
+            --pdf-engine=xelatex \
+            -V CJKmainfont="Noto Sans CJK SC" \
+            -V geometry:margin=1in \
+            --toc \
+            --toc-depth=2
+            
+      - name: Commit PDF to Repo
+        run: |
+          # 将 PDF 移动到 assets 文件夹（或者你指定的其他位置）
+          mkdir -p assets/downloads
+          mv HongQing_Archives.pdf assets/downloads/HongQing_Archives.pdf
+          
+          # 配置 git 身份
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          
+          # 提交更改
+          git add assets/downloads/HongQing_Archives.pdf
+          git commit -m "Auto-update PDF export [skip ci]" || echo "No changes to commit"
+          git push
